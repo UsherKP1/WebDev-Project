@@ -96,7 +96,7 @@ body {
     height: 65vh; /* Covers 65% of screen height perfectly */
     min-height: 450px;
     /* Replace URL placeholder with your actual desktop banner image path */
-    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600') center/cover no-repeat;
+    background: url('https://media.istockphoto.com/id/1185541184/photo/landscape-of-the-west-side-of-the-island-of-oahu-waianae-hawaii-pokai-bay-beach-coast-line.jpg?s=612x612&w=0&k=20&c=ph3yhSy1dHAE0HjCHMyfNag5281s1AhIKsQaRHnBUvY=') center/cover no-repeat;
 }
 
 /* Dark gradient overlay to keep white text readable over bright images */
@@ -186,4 +186,8 @@ body {
     .hero-content p {
         font-size: 1rem;
     }
+}
+
+.sport-player{
+    background: url('https://res.cloudinary.com/ybmedia/image/upload/c_crop,e_improve,h_665,w_1182,x_582,y_102/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/e/5/e5058c5572c0f33de642fd5bc2b4c68f3d03b4fd/eagles-saquon-barkley-top-historic-2024-season.jpg') center/cover no-repeat;
 }
