@@ -1,0 +1,193 @@
+/* Global Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #fcfcfc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000000;
+}
+
+/* Active underline indicator */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #111111;
+}
+
+/* Accent Action Button in Navbar */
+.nav-btn {
+    text-decoration: none;
+    background-color: #c48b7f;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.nav-btn:hover {
+    opacity: 0.9;
+}
+
+/* Large Hero Header Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 65vh; /* Covers 65% of screen height perfectly */
+    min-height: 450px;
+    /* Replace URL placeholder with your actual desktop banner image path */
+    background: url('https://media.istockphoto.com/id/1185541184/photo/landscape-of-the-west-side-of-the-island-of-oahu-waianae-hawaii-pokai-bay-beach-coast-line.jpg?s=612x612&w=0&k=20&c=ph3yhSy1dHAE0HjCHMyfNag5281s1AhIKsQaRHnBUvY=') center/cover no-repeat;
+}
+
+/* Dark gradient overlay to keep white text readable over bright images */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #111111;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Main Content Area Styling */
+.main-content {
+    padding: 60px 20px;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+/* Mobile Responsiveness Rules */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+.sport-player{
+    background: url('https://res.cloudinary.com/ybmedia/image/upload/c_crop,e_improve,h_665,w_1182,x_582,y_102/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/e/5/e5058c5572c0f33de642fd5bc2b4c68f3d03b4fd/eagles-saquon-barkley-top-historic-2024-season.jpg') center/cover no-repeat;
+}
