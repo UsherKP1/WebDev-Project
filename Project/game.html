@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Guessing Game</title>
+    <title>Matthew Usher | Home</title>
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
-     <nav class="navbar">
-            <div class="nav-container">
-                <!-- Logo / Brand Name -->
-                <a href="index.html" class="nav-logo">Matthew Usher</a>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Matthew Usher</a>
+    
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fromscratch.html" class="nav-link">Football</a>
+                </li>
+                <li class="nav-item">
+                    <a href="game.html" class="nav-link">Game</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="game-arena" class="main-content">
         
-                <!-- Navigation Links -->
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="resume.html" class="nav-link">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="fromscratch.html" class="nav-link">Football</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="game.html" class="nav-link">Game</a>
-                    </li>
-                </ul>
+        <div class="game-container">
+            <h2>Guess The Number!</h2>
+            <p>I'm thinking of a number between <b>1 and 25</b>. You get <b>3 attempts</b>.</p>
+
+            <div id="start-section">
+                <button class="btn" id="start-btn">Start Game</button>
             </div>
-        </nav>
-    <div class="game-container">
-        <h1>Guess The Number!</h1>
-        <p>I'm thinking of a number between <b>1 and 25</b>. You have <b>3 attempts</b>.</p>
 
-        <div id="start-section">
-            <button class="btn" id="start-btn">Start Game</button>
-        </div>
-
-        <div id="game-section" class="hidden">
-            <div class="input-section">
-                <input type="number" id="guess-input" min="1" max="25" placeholder="??">
-                <button class="btn" id="guess-btn">Guess</button>
+            <div id="game-section" class="hidden">
+                <div class="input-section">
+                    <input type="number" id="guess-input" min="1" max="25" placeholder="??">
+                    <button class="btn" id="guess-btn">Guess</button>
+                </div>
+                
+                <p id="attempts-left">Attempts left: 3</p>
+                <button class="btn btn-danger" id="end-btn">End Game</button>
             </div>
-            
-            <p id="attempts-left">Attempts left: 3</p>
-            <button class="btn btn-danger" id="end-btn">End Game</button>
+
+            <div id="restart-section" class="hidden">
+                <button class="btn" id="play-again-btn">Play Again?</button>
+            </div>
+
+            <p id="message"></p>
         </div>
 
-        <div id="restart-section" class="hidden">
-            <button class="btn" id="play-again-btn">Play Again?</button>
-        </div>
-
-        <p id="message"></p>
-    </div>
+    </main>
 
     <script src="site.js"></script>
 </body>
